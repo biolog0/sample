@@ -1,0 +1,238 @@
+body{
+  margin:0px;
+  padding:0px;
+  width: 100%;
+  font-family: 'Montserrat';
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+main{
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 0px 23px; */
+  position: relative;
+  width: 100%;
+  height: auto;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 10% 0%;
+}
+
+
+header{
+  position: fixed;
+  top: 0px;
+}
+
+
+#myInput {
+background-position: 10px 12px;
+background-repeat: no-repeat;
+width: 99%;
+font-size: 16px;
+padding: 4px 7px;
+border: 1px solid #ddd;
+margin-bottom: 12px;
+font-family: 'Montserrat';
+}
+.btn a{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  background:#5364FF;
+  flex: none;
+  text-decoration: none;
+  padding: 12%;
+  border-radius: 8px;
+}
+footer{
+padding: 16px 0px;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #f1f1f1;
+color: white;
+text-align: center;
+height: auto;
+}
+
+.footer-block span{
+  width: 100%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  align-items: center;
+  text-align: center;
+  color: #000000;
+
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left; 
+  padding: 8px; 
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.navbar {
+  width: 100%;
+  background-color: #000000;
+  overflow: auto;
+  z-index: 1;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #5364ff;
+}
+
+.active {
+  background-color: #5364ff;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.navbar-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.logo{
+  width: 20px;
+  padding: 0px 7px;
+}
+.content{
+  width: 92%;
+}
+.filterDiv {
+display: none; 
+}
+
+.show {
+display: table-row;
+}
+
+/* Стиль кнопок */
+.btn {
+border: none;
+outline: none;
+padding: 12px 16px;
+background-color: #f1f1f1;
+cursor: pointer;
+font-family: 'Montserrat';
+}
+
+
+.btn:hover {
+background-color: #ddd;
+}
+
+
+.btn.active {
+background-color: #666;
+color: white;
+}
+#myBtnContainer{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+margin-bottom: 10px;
+}
+.card {
+box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card {
+display: flex;
+flex-direction: column;
+min-width: 0;
+word-wrap: break-word;
+background-clip: border-box;
+border: 0 solid rgba(0,0,0,.125);
+align-items: flex-start;
+background-color: #f1f1f1;
+}
+
+.card-body {
+flex: 1 1 auto;
+min-height: 1px;
+padding: 4rem 4rem;
+}
+
+.card-row{
+display: inline-flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+ul{
+list-style-type: none;
+padding-left: 0;
+}
+input{
+border: 0;
+background-color: #ffffff00;
+}
+
+#inputUpload {
+display: none;
+}
+
+.file-upload {
+cursor: pointer;
+text-decoration: underline;
+}
+.btn{
+background-color: #ffffff;
+}
+.row{
+display: inline-flex;
+  position: absolute;
+  width: 85%;
+  left: 7%;
+  top: 5%;
+
+}

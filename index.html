@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" lang="ru">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    
+    <header class="navbar">
+      <div class="navbar-block">
+        <a href="#"><img class="logo" src="Group 3.png" alt="">My Portfolio</a>
+        <a href="#">Projects</a>
+        <a class="active" href="#">Contests</a>
+        <a href="#">Log out</a>
+    </div>
+    </header>
+<main><div class="row">
+    <div class="right">
+    <div class="container">
+        <div class="card-row">
+            <div class="card">
+              <div class="card-body">
+                <div class="">
+                  <img src="http://cdn.onlinewebfonts.com/svg/img_308130.png" alt="Admin" width="150"><br>
+                    <span style="color:brown">You don't have an avatar! </span>
+                    <label for="inputUpload" class="file-upload" style="color:brown">Upload your file</label>
+                <input id="inputUpload" type="file" />​
+
+                    <h4>John Smith</h4>
+                    <p >24.11.2004</p>
+                    <p >Bay Area, San Francisco, CA</p>
+                    <span>student01@gmail.com</span>
+                    
+                </div> 
+              </div> 
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="left">
+
+    <div class="container">
+        <div class="content"><h2>My Contests</h2>
+            <h3>Check your contests here</h3>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Input contests name here... ">
+
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> All</button>
+                <button class="btn" onclick="filterSelection('2021')"> 2021</button>
+                <button class="btn" onclick="filterSelection('2022')"> 2022</button>
+                <button class="btn" onclick="filterSelection('2023')"> 2023</button>
+                <button class="btn" onclick="filterSelection('2020')"> 2020</button>
+            </div>
+            <table id="myTable">
+            <tr class="header">
+                <th onclick="sortTable(0)">Name</th>
+                <th onclick="sortTable(1)">Year of participation</th>
+                <th onclick="sortTable(2)">Achievement</th>
+                <th onclick="sortTable(3)">Source</th>
+            </tr>
+            <tr class="filterDiv 2023">
+                <td>Moscow Contest 2023</td>
+                <td>2023</td>
+                <td>Fisrt place I</td>
+                <td><img src="https://tehteh.ru/wp-content/uploads/2018/11/2018-11-Mitrofanova-DP3bolshaya-olimpiada.rf.jpg" alt="" style="width:100%;max-width:150px"></td>
+            </tr>
+            <tr class="filterDiv 2021">
+                <td>World Skills 2021</td>
+                <td>2021</td>
+                <td>Fisrt place I</td>
+                <td><img src="https://tehteh.ru/wp-content/uploads/2018/11/2018-11-Mitrofanova-DP3bolshaya-olimpiada.rf.jpg" alt="" style="width:100%;max-width:150px"></td>
+            </tr>
+            <tr class="filterDiv 2020">
+                <td>Samara Modern Contest</td>
+                <td>2020</td>
+                <td>Fisrt place I</td>
+                <td><img src="https://tehteh.ru/wp-content/uploads/2018/11/2018-11-Mitrofanova-DP3bolshaya-olimpiada.rf.jpg" alt="" style="width:100%;max-width:150px"></td>
+            </tr>
+            <tr class="filterDiv 2019">
+                <td>Kazan Competition 2019</td>
+                <td>2019</td>
+                <td>Fisrt place I</td>
+                <td><img  src="https://tehteh.ru/wp-content/uploads/2018/11/2018-11-Mitrofanova-DP3bolshaya-olimpiada.rf.jpg" alt="" style="width:100%;max-width:150px"></td>
+            </tr>
+            </table>
+            
+    </div>
+        
+    </div>
+        <div class="container">
+            <div class="content"><h2>My Projects</h2>
+                <h3>Check your projects here</h3>
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Input project name here... ">
+        
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> All</button>
+                    <button class="btn" onclick="filterSelection('2021')"> 2021</button>
+                    <button class="btn" onclick="filterSelection('2022')"> 2022</button>
+                    <button class="btn" onclick="filterSelection('2023')"> 2023</button>
+                    <button class="btn" onclick="filterSelection('2020')"> 2020</button>
+                </div>
+                <table id="myTable">
+                <tr class="header">
+                    <th onclick="sortTable(0)">Name</th>
+                    <th onclick="sortTable(1)">Year of release</th>
+                    <th onclick="sortTable(2)">About</th>
+                    <th onclick="sortTable(3)">Source</th>
+                </tr>
+                <tr class="filterDiv 2023">
+                    <td>Tesla</td>
+                    <td>2023</td>
+                    <td>Create tesla</td>
+                    <td><img src="https://tehteh.ru/wp-content/uploads/2018/11/2018-11-Mitrofanova-DP3bolshaya-olimpiada.rf.jpg" alt="" style="width:100%;max-width:150px"></td>
+                </tr>
+                <tr class="filterDiv 2021">
+                    <td>MouseClicker</td>
+                    <td>2021</td>
+                    <td>Invention</td>
+                    <td><img src="https://tehteh.ru/wp-content/uploads/2018/11/2018-11-Mitrofanova-DP3bolshaya-olimpiada.rf.jpg" alt="" style="width:100%;max-width:150px"></td>
+                </tr>
+                <tr class="filterDiv 2020">
+                    <td>SamaraMIT</td>
+                    <td>2020</td>
+                    <td>Create first SamaraCar</td>
+                    <td><img src="https://tehteh.ru/wp-content/uploads/2018/11/2018-11-Mitrofanova-DP3bolshaya-olimpiada.rf.jpg" alt="" style="width:100%;max-width:150px"></td>
+                </tr>
+                <tr class="filterDiv 2019">
+                    <td>KOREANFOOTER</td>
+                    <td>2019</td>
+                    <td>Korean cosmetics</td>
+                    <td><img  src="https://tehteh.ru/wp-content/uploads/2018/11/2018-11-Mitrofanova-DP3bolshaya-olimpiada.rf.jpg" alt="" style="width:100%;max-width:150px"></td>
+                </tr>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+     </div>
+</main>
+<footer>
+        
+</footer>
+
+</body>
+</html>
+
